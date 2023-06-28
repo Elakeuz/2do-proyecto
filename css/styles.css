@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+/* Fonts */
+/* Importar aquí la font */
+.imagen{
+    border-radius:50%;
+    justify-content: center;
+    width: 18rem;
+    height: 18rem;
+    
+}
+
+#logo{
+    
+    width: 5.7rem;
+    height: 3rem;
+       
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* titulos */
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 28px;
+}
+
+
+/* parrafos */
+p{
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    margin: 20px;
+}
+
+div{
+    text-align: center;
+    
+}
+section{
+    min-height: 100vh;
+
+}
+/* esta es una section especifica para la segunda parte es que me quedaba descuadrado */
+.red{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* empezamos con la barra de navegacion */
+header {
+    display: flex;
+    background: white;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-bottom: 10px;
+    z-index: 100;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+    
+    }
+
+nav{
+    float: right;
+}
+nav ul {
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+  nav ul li a  {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 25px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* ya terminamos con la barra de nav gracias por su atencion jaja */
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 120px;
+}
+
+.boton{
+    border: 10px;
+    background-color: #af599e;
+    padding: 15px 32px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #af599e;
+    text-align: center;
+    color: #fbfbfb;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+/* los inconos */
+.icono{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 1rem;
+}
+
+/* iconos es el padre de los iconos pa aliniarlos */
+#iconos{
+    display:flex;
+    justify-content: center;
+    
+}
+
+/* para ponerle el color aparte a contacto */
+
+#contacto{
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 25px;
+    margin: 0.5rem;
+
+    
+}
+
+body{
+    align-items: center;
+}
+
+/* Ahora comienzo con los media acuerry */
+
+
+
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
