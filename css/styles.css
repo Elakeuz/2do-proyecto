@@ -14,8 +14,8 @@
 
 #logo{
     
-    width: 5.7rem;
-    height: 3rem;
+    width: 7rem;
+    height: 5.5rem;
        
 }
 
@@ -75,7 +75,7 @@ a {
 /* empezamos con la barra de navegacion */
 header {
     display: flex;
-    background: white;
+    background: #ac2222;
     justify-content:space-around;
     align-items: center;
     position: fixed;
@@ -104,7 +104,7 @@ nav ul li {
   nav ul li a  {
     display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
     padding: 25px;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ main {
 
 .boton{
     border: 10px;
-    background-color: #af599e;
+    background-color: #d13737;
     padding: 15px 32px;
     text-align: center;
     color:white;
@@ -129,8 +129,12 @@ main {
     font-size: 20px;
 }
 
+.boton:hover{
+    background-color: #801818;
+}
+
 footer{
-    background-color: #af599e;
+    background-color: #801818;
     text-align: center;
     color: #fbfbfb;
     height: 90px;
@@ -155,7 +159,7 @@ footer{
 /* para ponerle el color aparte a contacto */
 
 #contacto{
-    background-color: rgba(175, 89, 158, 0.3);
+    background-color: rgba(175, 89, 89, 0.3);
     border-radius: 25px;
     margin: 0.5rem;
 
@@ -166,25 +170,99 @@ body{
     align-items: center;
 }
 
+#glitch{
+    width: 2.6rem;
+    height: 1.4rem;
+    margin-top: 1.3rem;
+}
+
+/* hacer que cambien a un color fijo dependiendo de la zona */
+li.menu-item a {
+    padding: 16px;
+    display: inline-block;
+}
+
+li.menu-item a.active{
+    color:black;
+    display: inline-block;
+}
+
+/* hacer que lso botones cambien de color */
+.btn:hover{
+    background-color: #e70463;
+}
+/* esto es para darle unas funcionalidades al boton glitch */
+
+#tomate .active #glitch{
+    background-color: aqua;
+}
+main.active{
+    background-color: aqua;
+}
+
+
+
 /* Ahora comienzo con los media acuerry */
+/* desktop */
+@media (min-width: 950px) {
+    .inicio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+    }
 
+    .imagen{
+        width: 25rem;
+        height: 30rem;
+        
+    }
 
+    h1{
+        font-size: 42px;
+    }
+    p{
+        font-size: 20px;
+    }
 
+    .icono{
+        width: 8rem;
+        height: 8rem;
+        margin: 2.5rem;
+    }
+    #contacto{
+        background-color: rgba(175, 89, 89, 0.37);
+        border-radius: 20px;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 1rem;  
+    }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
+    ul {
+        position: fixed;
+        left: 72%;
+        top: 0;
+        width: 100%; 
+        z-index: 100;
+        padding: 10px;
+    }
+
+    #logo  {
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+    }
+
+    #glitch{
+        width: 4rem;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+
+    
+  }
+
+/* en general cambie todo a rojo, tambien me gusta deadpool pero como el la pagina de sergio lo tenia
+puse a otro personaje que me gusta mucho que es spiderman de logo  */
